@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cafe Analog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-static-top">
+  <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-controls="navbar">
+    <img class="menu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="">
+  </button>
+  <a class="navbar-brand" href="frontpage.html">
+    <img class="logo" src="https://cafeanalog.dk/volunteer/analogo.png" title="Cafe Analog" alt="Logo">
+  </a>
+  <div class="navbar-collapse collapse " id="navbarSupportedContent">
+    <ul class="nav navbar-nav ml-auto padLeft nav-itempad">
+      <li class="nav-item">
+        <a class="nav-link h2" href="menupage.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link h2" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link h2" href="#">Our locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link h2" href="profile.html">Profile</a>
+      </li>
+    </ul>
+  </div>
+  <button class="navbar-toggler displayAlways" >
+    <img class="menu" src="http://simpleicon.com/wp-content/uploads/basket.png">
+  </button>
+</nav>
+<div class="page_title">
+  <h1>Order</h1>
+</div>
+<div class="order_details">
+  <form action="">
+    <h2 id="prodHeader"></h2>
+    <h3>Size</h3>
+    <input type="radio" name="size" id="small" required>
+    <label for="small">Small</label>
+    <input type="radio" name="size" id="large">
+    <label for="large">Large</label>
+
+    <h3>Add-ons</h3>
+    <select id="add-ons" name="add-oms">
+      <option value="default">Choose milk</option>
+      <option value="skimmed_milk">Skimmed Milk</option>
+      <option value="oat_milk">Oat milk</option>
+      <option value="rice_milk">Rice milk</option>
+    </select>
+    <h2>20 CB</h2>
+    <button class="buttonGreen" type="button">Add to order</button>
+  </form>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+<script>
+  var product = window.location.href.split("prod=")[1];
+  document.getElementById("prodHeader").innerHTML=product;
+</script>
+
+</html>

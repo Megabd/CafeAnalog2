@@ -1,0 +1,517 @@
+.navbar {
+    background: rgb(241, 169, 60);
+}
+
+.navbar-brand {
+    align-content: center;
+    margin: auto;
+}
+/*hmm*/
+.displayAlways{
+    display: inline-block!important;
+}
+
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+
+.logo {
+    max-height: 64px;
+}
+
+.menu {
+    max-height: 64px;
+}
+
+.padLeft{
+    margin-left: auto!important;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-itempad {
+    padding-left: 2%;
+}
+
+.producttable {
+    box-sizing: border-box;
+}
+
+.buttonGreen {
+    padding: 10px;
+    background-color: rgb(193, 234, 161);
+    border: none;
+    font-size: 20px;
+    width: 222px;
+    height: 60px;
+}
+
+.buttonGreen:hover {
+    background-color: rgb(200, 240, 169);
+}
+/* Productcard */
+.productcard {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.productcard img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.productcard a {
+    text-decoration: none;
+    color: inherit;
+}
+.productcard a:hover {
+    color: #452262;
+}
+
+/* Productpage */
+.page_title {
+    background-color: #efefb5;
+    display: block;
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    text-align: center;
+}
+
+.page_title h1 {
+    margin: 0;
+}
+
+
+.menuBar {
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 67px;
+    background-color: grey;
+}
+
+.logoInMenuBar {
+    height: 100%;
+    width: 65px;
+    background-color: darkgrey;
+    text-align: center;
+    line-height: 60px;
+
+    display: inline-block;
+    float: left;
+}
+
+.textAllignment {
+    text-align: center;
+}
+
+.menuItems {
+    float: left;
+    position: relative;
+    line-height: 90%;
+    margin: 5%;
+    width: 40%;
+    height: 100px;
+    padding-bottom: 20%;
+    background-color: lightgrey;
+}
+
+.menuText {display: none;}
+.menuIcons {
+    height: 100%;
+    width: 65px;
+    background-color: darkgrey;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    float: right;
+}
+
+.boxBehindOtherBoxes {
+    margin: auto;
+    width: 98%;
+    margin-top: 76px;
+    height: 100%;
+    background-color: darkgrey;
+}
+
+.boxBehindOtherBoxes2 {
+    margin: auto;
+    width: 98%;
+    margin-top: 186px;
+    height: 950px;
+    background-color: darkgrey;
+}
+
+.boxes {
+    float: none;
+    margin: 5%;
+    top: 20px;
+    width: 90%;
+    height: 350px;
+    background-color: lightgrey;
+}
+
+body {margin:0px;}
+
+.bottomBar {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    position: relative;
+    height: 110px;
+    background-color: grey;
+    text-align: center;
+    line-height: 110px;
+}
+
+.orderBar {
+    left: 0px;
+    top: 67px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #444141;
+}
+
+.toCartBar{
+
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #444141;
+}
+.toCart{
+    color: white;
+    background-color: #706a6a;
+    font-size: 20px;
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.boxBehindOtherBoxesProfile {
+    margin: auto;
+    width: 98%;
+    height: 1000px;
+    margin-top: 76px;
+    background-color: darkgrey;
+}
+
+.profileIcon {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 0px;
+    width: 100px;
+    height:  100px;
+    line-height: 100px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.textBesidesProfileIcon {
+    float: left;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: larger;
+    color: white;
+}
+
+.profileInfoBox {
+    float: left;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    height: 50px;
+    background-color: lightgrey;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+.linkWithFacebook {
+    margin: 0px;
+    margin-right: 10px;
+    position: absolute;
+    left: 20%;
+    top: 55%;
+    width: 100px;
+    float: left;
+    height: 50px;
+    background-color: lightgrey;
+    line-height: 50px;
+    text-align: center;
+}
+
+.linkWithInstagram {
+    margin: 0px;
+    margin-left: 10px;
+    position: absolute;
+    right: 20%;
+    top: 55%;
+    width: 100px;
+    float: right;
+    background-color: lightgrey;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+
+.alignLeft {
+    position: absolute;
+    left: 5%;
+}
+.alignRight {
+    position: absolute;
+    right: 5%;
+}
+
+.center {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centerVertical {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.white {color: white}
+
+.brown {background-color:#7d4212}
+
+div.image::before {
+    content:url(https://cdn.discordapp.com/attachments/950338352618549268/967451617223933992/unknown.png);
+}​
+
+ .finishedOrder {
+     background-image: url(https://cdn.discordapp.com/attachments/950338352618549268/967451617223933992/unknown.png);
+     background-size: cover;
+ }
+
+.receiptImageBox {
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+    width: 35%;
+    height: 20%;
+    background-color: grey;
+    position: absolute;
+    margin:auto;
+    font-size-sm: 1.6rem;
+}
+
+.receiptPageImageWidth {
+    width: 98%;
+}
+
+.topMarginOnePercent {
+    margin-top: 1%;
+}
+
+.rowMargins {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.colMargins {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.receiptColOneMargins {
+    margin-left: 18%;
+    margin-bottom: 1%;
+}
+
+.receiptColThreeMargins {
+    margin-left: 18%;
+    margin-bottom: 1%;
+}
+
+.receiptTotalAmountMargins {
+    margin-left: 18%;
+    margin-bottom: 5%;
+}
+
+.orderNumberMargins {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.cafeAnalogCopenhagenText {
+    margin-left: 25%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.containerBackgroundColor {
+    background-color:#7d4212;
+}
+
+.receiptImageContainer {
+    position: relative;
+    text-align: center;
+}
+
+.receiptBackHomeBox {
+    background-color:#9F8383;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media(min-width:481px) and (max-width:768px) {
+    /* Menupage */
+    .productcard {
+        width: 50%;
+    }
+}
+
+@media (min-width:768px) {
+    .logo {
+        max-height: 100px;
+        height: 100px;
+        margin-left: 5%;
+    }
+
+    .menu {
+        max-height: 64px;
+    }
+
+    /* Menupage */
+    .productcard {
+        width: 25%;
+    }
+
+    .orderBar {
+        top: 110px;
+    }
+
+    .menuBar {
+        height: 110px;
+    }
+
+    .logoInMenuBar {
+        width: 100px;
+        line-height: 110px;
+    }
+
+    .menuText {
+        display: inline-block;
+        float: left;
+        color: white;
+        margin-left: 50px;
+        line-height: 110px;
+    }
+
+    .menuIcons {display: none;}
+
+    .menuItems {
+        position: static;
+        line-height: normal;
+        margin: 25px;
+        top: 20px;
+        width: 400px;
+        height: 300px;
+        padding-bottom: 0px;
+    }
+
+    .boxBehindOtherBoxes {
+        width: 900px;
+        height: 1400px;
+        margin-top: 120px;
+    }
+    .boxBehindOtherBoxes2 {
+        width: 900px;
+        height: 1400px;
+        margin-top: 220px;
+    }
+
+    .boxes {
+        float: left;
+        margin: 25px;
+        top: auto;
+        width: 400px;
+        height: 400px;
+    }
+
+    .profileIcon {
+        margin: 50px;
+        width: 150px;
+        height: 150px;
+        line-height: 140px;
+    }
+
+    .textBesidesProfileIcon {
+        margin-left:50px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        width: 300px;
+        height: 150px;
+        font-size: x-large;
+    }
+
+    .profileInfoBox {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 340px;
+        height: 50px;
+    }
+
+    .linkWithFacebook {
+        left: 0%;
+        top: 0%;
+        position: static;
+        margin-left: 25%;
+        margin-right: 20px;
+        margin-top: 200px;
+        width: 200px;
+    }
+
+    .linkWithInstagram {
+        left: 0%;
+        top: 0%;
+        position: static;
+        margin-left: 20px;
+        margin-right: 25%;
+        margin-top: 200px;
+        width: 200px;
+    }
+
+    .boxBehindOtherBoxesProfile {
+        width: 900px;
+        margin-top: 120px;
+        height: 1400px;
+    }
+
+    .receiptPageImageWidth {
+        width: 50%;
+    }
+
+}
