@@ -386,6 +386,42 @@ div.image::before {
     margin-bottom: 2%;
 }
 
+.shoppingCartColOneMargins {
+    margin-left: 18%;
+    margin-bottom: 1%;
+}
+
+.shoppingCartColThreeMargins {
+    margin-left: 18%;
+    margin-bottom: 1%;
+}
+
+.shoppingCartBackHomeBox {
+    background-color:#9F8383;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.shoppingCartTopFivePercent {
+    margin-top: 5%;
+}
+
+.paymentInfoColumn {
+    margin-left: 10%;
+}
+
+.scTotalAmountMargins {
+    margin-left: 18%;
+    margin-bottom: 5%;
+}
+
+.scLocationMargins {
+    margin-left: 18%;
+    margin-bottom: 10%;
+    margin-top: 1%;
+}
+
 @media(min-width:481px) and (max-width:768px) {
     /* Menupage */
     .productcard {

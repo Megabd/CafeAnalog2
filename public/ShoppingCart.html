@@ -42,29 +42,31 @@
 </nav>
 <div class="container topMarginOnePercent">
 
-  <div class="card text-center text-white" style="background-color:#7d4212;">
+  <div class="card text-center text-white brown">
     <div class="card-body">
       <h5 class="card-title">Shopping Cart</h5>
 
     </div>
   </div>
 
-  <div clas="container" style="background-color:#7d4212;">
+  <div class="container brown">
 
     <div class="row topMarginOnePercent">
 
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%"></div>
-      <div class="col-4 center white" style="margin-left: 18%; margin-bottom: 1%; margin-top: 1%">Cafe Analog - Copenhagen</div>
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%"></div>
+      <div class="col shoppingCartColOneMargins"></div>
+      <div class="col-4 center white scLocationMargins">Cafe Analog - Copenhagen</div>
+      <div class="col shoppingCartColThreeMargins"></div>
 
 
     </div>
 
+    <!-- Example of what we used for a picture of a drink and the text next to it -->
+    <!--
     <div class="row rowMargins">
 
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%">
+      <div class="col shoppingCartColOneMargins">
 
-        <img style = "margin-top: 5%;"
+        <img class ="shoppingCartTopFivePercent"
              src="https://cdn.discordapp.com/attachments/950338352618549268/967412571231633438/unknown.png"
              width="80%"
              alt="MDB Logo"
@@ -74,88 +76,33 @@
       </div>
 
       <div class="col-4 center white">
-
         Cappucino 35 DKK
-
       </div>
 
       <div class="col">
-
       </div>
 
-    </div>
+    </div> -->
 
-    <div class="row rowMargins">
+    <!-- Total amount field-->
 
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%">
-
-        <img style = "margin-top: 5%;"
-             src="https://cdn.discordapp.com/attachments/950338352618549268/967412729461739530/unknown.png"
-             width="80%"
-             alt="MDB Logo"
-             loading="lazy"
-        />
-
-      </div>
-
-      <div class="col-4 center white">
-
-        Americano 32 DKK
-
-      </div>
-
-      <div class="col">
-
-      </div>
-
-    </div>
-
-
-    <div class="row rowMargins">
-
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%">
-
-        <img style = "margin-top: 5%;"
-             src="https://cdn.discordapp.com/attachments/950338352618549268/967412870075805767/unknown.png"
-             width="80%"
-             alt="MDB Logo"
-             loading="lazy"
-        />
-
-      </div>
-
-      <div class="col-4 center white">
-
-        Croissant 20 DKK
-
-      </div>
-
-      <div class="col">
-
-      </div>
-
-    </div>
-
+    <!--
     <div class="row">
 
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%"></div>
-      <div class="col-4 center white" style="margin-left: 18%; margin-bottom: 5%">Total: 92 DKK</div>
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%"></div>
+      <div class="col shoppingCartColOneMargins"></div>
+      <div class="col-4 center white scTotalAmountMargins">Total: 92 DKK</div>
+      <div class="col shoppingCartColThreeMargins"></div>
 
-
-    </div>
-
-
+    </div> -->
 
   </div>
 
+  <!-- Payment Information container for shopping cart-->
   <div class="container brown">
-
     <div class="row rowMargins">
+      <div class="col shoppingCartColOneMargins">
 
-      <div class="col" style="margin-left: 18%; margin-bottom: 1%">
-
-        <img style = "margin-top: 5%;"
+        <img class="shoppingCartTopFivePercent"
              src="https://cdn.discordapp.com/attachments/950338352618549268/967443268705071175/unknown.png"
              width="90%"
              alt="MDB Logo"
@@ -164,28 +111,25 @@
 
       </div>
 
-      <div class="col-3 centerVertical white" style="margin-left: 10%">
+      <div class="col-3 centerVertical white paymentInfoColumn">
 
-        <div style="margin-top: 5%">Payment info</div>
-        <div style="margin-top: 5%">xxxx1292 &nbsp; &nbsp; &nbsp; 02/09-24</div>
-        <div style="margin-top: 5%">Jens Ole</div>
-
-
+        <div class="shoppingCartTopFivePercent">Payment info</div>
+        <div class="shoppingCartTopFivePercent">xxxx1292 &nbsp; &nbsp; &nbsp; 02/09-24</div>
+        <div class="shoppingCartTopFivePercent">Jens Ole</div>
 
       </div>
 
       <div class="col">
-
       </div>
 
     </div>
-
   </div>
 
+  <!-- Finish order button -->
   <div class="container brown">
 
     <a href = "Receipt.html" style = "text-decoration: none;"><div class="center">
-      <button type="button" class="btn btn-info btn-lg btn-block" data-mdb-ripple-color="#ffffff" style="background-color:#9F8383; width: 80%; margin-top: 2%; margin-bottom: 2%;">
+      <button type="button" class="btn btn-info btn-lg btn-block shoppingCartBackHomeBox" data-mdb-ripple-color="#ffffff">
         <div class="white">Finish order</div>
       </button>
     </div></a>
