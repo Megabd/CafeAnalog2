@@ -26,6 +26,10 @@ import {
 
 import { getFirebaseConfig } from './firebase-config.js';
 
+
+
+
+
 // Firebase sign-in.
 async function signIn() {
     // Sign in Firebase using popup auth and Google as the identity provider.

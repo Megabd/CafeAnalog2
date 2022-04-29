@@ -1,5 +1,25 @@
+
+
+    function start(){
+    if (sessionStorage.getItem('wallet') == null){
+        sessionStorage.setItem('wallet', 0);
+
+    }
+        document.getElementById('wallet').innerHTML = sessionStorage.getItem('wallet');
+
+}
+
+    function addMoney(data) {
+    sessionStorage.setItem('wallet', parseInt(sessionStorage.getItem('wallet')) + 100);
+    document.getElementById('wallet').innerHTML = sessionStorage.getItem('wallet');
+}
+
+// below is not used
 const items = [];
 let itemsAmount = 0;
+
+
+
 
 
 function addItem(name, link, price){
@@ -8,9 +28,7 @@ function addItem(name, link, price){
      console.log(items[itemsAmount-1]);
 
 }
-function test(){
-    console.log(items[itemsAmount-1]);
-}
+
 
 class Item {
     constructor(name, link, price) {
