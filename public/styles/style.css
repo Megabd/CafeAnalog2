@@ -422,6 +422,13 @@ div.image::before {
     margin-top: 1%;
 }
 
+.profileAddMoney {
+    background-color:lightgrey;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 @media(min-width:481px) and (max-width:768px) {
     /* Menupage */
     .productcard {
