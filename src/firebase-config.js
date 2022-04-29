@@ -7,7 +7,16 @@
  * 4. Copy the config object snippet, then add it here.
  */
 const config = {
-  /* TODO: ADD YOUR FIREBASE CONFIGURATION OBJECT HERE */
+
+    apiKey: "AIzaSyCnBS6H2Hpf_uJXxqqQcloj17AOW8iADVQ",
+    authDomain: "cafe-analog-aa881.firebaseapp.com",
+    databaseURL: "https://cafe-analog-aa881-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "cafe-analog-aa881",
+    storageBucket: "cafe-analog-aa881.appspot.com",
+    messagingSenderId: "1091539673530",
+    appId: "1:1091539673530:web:d1804770f71ebfe803bd83",
+    measurementId: "G-H2HM46QKMP"
+
 };
 
 export function getFirebaseConfig() {
