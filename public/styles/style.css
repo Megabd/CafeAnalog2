@@ -246,7 +246,7 @@ body {margin:0px;}
     position: relative;
 }
 
-.linkWithFacebook {
+.walletBalance {
     margin: 0px;
     margin-right: 10px;
     position: absolute;
@@ -260,18 +260,18 @@ body {margin:0px;}
     text-align: center;
 }
 
-.linkWithInstagram {
+.addMoney {
     margin: 0px;
     margin-left: 10px;
     position: absolute;
     right: 20%;
     top: 55%;
-    width: 100px;
+    width: 27%;
     float: right;
     background-color: lightgrey;
     text-align: center;
     line-height: 50px;
-    height: 50px;
+    height: 70px;
 }
 
 .alignLeft {
@@ -429,6 +429,14 @@ div.image::before {
     margin-bottom: 2%;
 }
 
+.h2Override {
+    font-size: 30px;
+}
+
+.h1Override {
+    font-size: 50px;
+}
+
 @media(min-width:481px) and (max-width:768px) {
     /* Menupage */
     .productcard {
@@ -527,7 +535,7 @@ div.image::before {
         height: 50px;
     }
 
-    .linkWithFacebook {
+    .walletBalance {
         left: 0%;
         top: 0%;
         position: static;
@@ -537,7 +545,7 @@ div.image::before {
         width: 200px;
     }
 
-    .linkWithInstagram {
+    .addMoney {
         left: 0%;
         top: 0%;
         position: static;
