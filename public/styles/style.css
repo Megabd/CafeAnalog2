@@ -225,7 +225,7 @@ body {margin:0px;}
     margin-top: 50px;
     margin-left: 0px;
     margin-bottom: 20px;
-    width: 200px;
+    width: 170px;
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -250,11 +250,11 @@ body {margin:0px;}
     margin: 0px;
     margin-right: 10px;
     position: absolute;
-    left: 20%;
+    left: 18%;
     top: 55%;
     width: 100px;
     float: left;
-    height: 50px;
+    height: 70px;
     background-color: lightgrey;
     line-height: 50px;
     text-align: center;
@@ -264,9 +264,9 @@ body {margin:0px;}
     margin: 0px;
     margin-left: 10px;
     position: absolute;
-    right: 20%;
+    right: 16%;
     top: 55%;
-    width: 27%;
+    width: 30%;
     float: right;
     background-color: lightgrey;
     text-align: center;
@@ -302,6 +302,8 @@ body {margin:0px;}
 
 .brown {background-color:#7d4212}
 
+.black {color: #000000}
+
 div.image::before {
     content:url(https://cdn.discordapp.com/attachments/950338352618549268/967451617223933992/unknown.png);
 }​
@@ -317,8 +319,8 @@ div.image::before {
     top: 50%;
     bottom: 0;
     margin: auto;
-    width: 35%;
-    height: 20%;
+    width: 55%;
+    height: 25%;
     background-color: grey;
     position: absolute;
     margin:auto;
@@ -563,6 +565,11 @@ div.image::before {
 
     .receiptPageImageWidth {
         width: 50%;
+    }
+
+    .receiptImageBox {
+        width: 35%;
+        height: 25%;
     }
 
 }
