@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/ShoppingCart.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-static-top">
@@ -63,46 +64,12 @@
     <div class="row topMarginOnePercent">
 
       <div class="col shoppingCartColOneMargins"></div>
-      <div class="col-4 center white scLocationMargins">Cafe Analog - Copenhagen</div>
+      <div class="col-4 center white scLocationMargins"></div>
       <div class="col shoppingCartColThreeMargins"></div>
 
 
     </div>
-
-    <!-- Example of what we used for a picture of a drink and the text next to it -->
-    <!--
-    <div class="row rowMargins">
-
-      <div class="col shoppingCartColOneMargins">
-
-        <img class ="shoppingCartTopFivePercent"
-             src="https://cdn.discordapp.com/attachments/950338352618549268/967412571231633438/unknown.png"
-             width="80%"
-             alt="MDB Logo"
-             loading="lazy"
-        />
-
-      </div>
-
-      <div class="col-4 center white">
-        Cappucino 35 DKK
-      </div>
-
-      <div class="col">
-      </div>
-
-    </div> -->
-
-    <!-- Total amount field-->
-
-    <!--
-    <div class="row">
-
-      <div class="col shoppingCartColOneMargins"></div>
-      <div class="col-4 center white scTotalAmountMargins">Total: 92 DKK</div>
-      <div class="col shoppingCartColThreeMargins"></div>
-
-    </div> -->
+    <div id="basket"></div>
 
   </div>
 
@@ -150,5 +117,8 @@
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="scripts/main.js"></script>
+<script>
+  buildBasket();
+</script>
 </body>
 </html>

@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/ShoppingCart.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-static-top">
@@ -68,8 +69,8 @@
       <option value="oat_milk">Oat milk</option>
       <option value="rice_milk">Rice milk</option>
     </select>
-    <h2>20 CB</h2>
-    <button class="buttonGreen" type="button">Add to order</button>
+    <h2><div id="price">20 CB</div></h2>
+    <button class="buttonGreen" type="button" onclick="addToBasket()">Add to order</button>
   </form>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
