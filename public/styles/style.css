@@ -314,6 +314,14 @@ body {margin:0px;}
     height: 70px;
 }
 
+.addMoney button {
+    padding-left: 0;
+    padding-right: 0;
+    width: inherit;
+    height: inherit;
+    font-size: 14px;
+}
+
 .alignLeft {
     position: absolute;
     left: 5%;
