@@ -1,7 +1,6 @@
 function addToBasket() {
     let product = document.getElementById("prodHeader").innerHTML;
     let price = document.getElementById("price").innerHTML;
-    console.log(product, price);
     let storage = getItems();
     storage.push({"name":product,"price":price});
     storeItem(storage);
