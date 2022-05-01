@@ -7,6 +7,17 @@ function addToBasket() {
     storeItem(storage);
 }
 
+function deleteFromBasket(item) {
+    let storage = getItems();
+    const found = storage.findIndex(el => el["name"] == item);
+    storage.splice(found,1);
+    console.log(storage)
+    storeItem(storage);
+    const element = document.getElementById("secret");
+    element.parentNode.removeChild(element);
+    buildBasket();
+}
+
 function storeItem(array) {
     sessionStorage.setItem('basket', JSON.stringify(array))
 }
@@ -45,6 +56,7 @@ function buildBasket() {
     let storage = getItems();
 
     let container = document.createElement('div');
+    container.id = "secret";
     container.classList.add(...["container", "p-3", "rounded", "cart"]);
 
     let title = document.createElement("h6");
@@ -61,51 +73,56 @@ function buildBasket() {
     count.textContent = "You have " + (storage.length) + " items in your cart";
     contents.appendChild(count);
 
-    for (let item of storage){
-        let productcard = document.createElement('div');
-        productcard.classList.add(...["d-flex", "justify-content-between", "align-items-center", "mt-3", "p-2", "items", "rounded"]);
-        let productContainer = document.createElement('div');
-        productContainer.classList.add(...["d-flex", "flex-row"]);
+    if (storage.length  > 0) {
+        for (let item of storage) {
+            let productcard = document.createElement('div');
+            productcard.classList.add(...["d-flex", "justify-content-between", "align-items-center", "mt-3", "p-2", "items", "rounded"]);
+            let productContainer = document.createElement('div');
+            productContainer.classList.add(...["d-flex", "flex-row"]);
 
-        let image = document.createElement('img');
-        image.classList.add("rounded");
-        image.src = "https://img.freepik.com/free-vector/coffee-love-foam-with-beans-cartoon-icon-illustration_138676-2575.jpg?w=2000";
-        productContainer.appendChild(image);
-        productcard.appendChild(productContainer);
+            let image = document.createElement('img');
+            image.classList.add("rounded");
+            image.src = "https://img.freepik.com/free-vector/coffee-love-foam-with-beans-cartoon-icon-illustration_138676-2575.jpg?w=2000";
+            productContainer.appendChild(image);
+            productcard.appendChild(productContainer);
 
-        let textContainer = document.createElement('div');
-        textContainer.classList.add("ml-2");
+            let textContainer = document.createElement('div');
+            textContainer.classList.add("ml-2");
 
-        let product = document.createElement('span');
-        product.classList.add(...["font-weight-bold", "d-block"]);
-        product.textContent = item["name"];
-        textContainer.appendChild(product);
+            let product = document.createElement('span');
+            product.classList.add(...["font-weight-bold", "d-block"]);
+            product.textContent = item["name"];
+            textContainer.appendChild(product);
 
-        let size = document.createElement('span');
-        size.classList.add("spec");
-        size.textContent = "Small/Large";
-        textContainer.appendChild(size);
-        productContainer.appendChild(textContainer);
+            let size = document.createElement('span');
+            size.classList.add("spec");
+            size.textContent = "Small/Large";
+            textContainer.appendChild(size);
+            productContainer.appendChild(textContainer);
 
-        let rightSide = document.createElement('div');
-        rightSide.classList.add(...["d-flex", "flex-row", "align-items-center"]);
-        let price = document.createElement('span');
-        price.classList.add(...["d-block", "ml-5", "font-weight-bold"]);
-        price.textContent = item["price"];
-        rightSide.appendChild(price);
+            let rightSide = document.createElement('div');
+            rightSide.classList.add(...["d-flex", "flex-row", "align-items-center"]);
+            let price = document.createElement('span');
+            price.classList.add(...["d-block", "ml-5", "font-weight-bold"]);
+            price.textContent = item["price"];
+            rightSide.appendChild(price);
 
-        let deleteButton =  document.createElement('button');
-        deleteButton.classList.add("deleteButton");
+            let deleteButton = document.createElement('button');
+            deleteButton.classList.add("deleteButton");
+            deleteButton.onclick = function () {
+                deleteFromBasket(item["name"]);
+            }
 
-        let trashCan = document.createElement('img');
-        trashCan.classList.add("trash");
-        trashCan.src = "https://icons-for-free.com/download-icon-delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588_512.png";
-        deleteButton.appendChild(trashCan);
-        rightSide.appendChild(deleteButton);
-        productcard.appendChild(rightSide);
+            let trashCan = document.createElement('img');
+            trashCan.classList.add("trash");
+            trashCan.src = "https://icons-for-free.com/download-icon-delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588_512.png";
+            deleteButton.appendChild(trashCan);
+            rightSide.appendChild(deleteButton);
+            productcard.appendChild(rightSide);
 
 
-        container.appendChild(productcard);
+            container.appendChild(productcard);
+        }
     }
     let total = document.createElement("h6");
     total.classList.add("mb-0");
