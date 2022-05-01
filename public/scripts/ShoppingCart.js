@@ -32,6 +32,10 @@ function buildReceipt(){
         let cell = trow.insertCell();
         cell.textContent = row["name"]+" "+row["price"];
     }
+    let total = document.createElement("h6");
+    total.classList.add("mb-0");
+    total.textContent = "Total: " + getTotal() + " CB";
+    table.appendChild(total);
 //append the compiled table to the DOM
     document.getElementById("receipt").appendChild(table);
     sessionStorage.setItem('basket', JSON.stringify([]));
@@ -103,6 +107,10 @@ function buildBasket() {
 
         container.appendChild(productcard);
     }
+    let total = document.createElement("h6");
+    total.classList.add("mb-0");
+    total.textContent = "Total: " + getTotal() + " CB";
+    container.appendChild(total);
 
     document.getElementById("basket").appendChild(container);
 }

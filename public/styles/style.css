@@ -118,6 +118,10 @@
     margin-left: 2em;
 }
 
+#receipt h6{
+    color: white;
+}
+
 .menuBar {
     left: 0px;
     top: 0px;
