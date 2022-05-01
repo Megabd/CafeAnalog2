@@ -11,7 +11,6 @@ function deleteFromBasket(item) {
     let storage = getItems();
     const found = storage.findIndex(el => el["name"] == item);
     storage.splice(found,1);
-    console.log(storage)
     storeItem(storage);
     const element = document.getElementById("secret");
     element.parentNode.removeChild(element);
