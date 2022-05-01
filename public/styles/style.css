@@ -85,6 +85,10 @@
     margin: 0;
 }
 
+.order_details {
+    margin-left: 5%;
+}
+
 #basket img {
     width: 40px;
 }
