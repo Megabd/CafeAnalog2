@@ -148,7 +148,7 @@ function getTotal(){
 
 function start(){
     if (sessionStorage.getItem('wallet') == null){
-        sessionStorage.setItem('wallet', 0);
+        sessionStorage.setItem('wallet', 100);
 
     }
     document.getElementById('wallet').innerHTML = sessionStorage.getItem('wallet');
