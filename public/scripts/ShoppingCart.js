@@ -68,7 +68,12 @@ function buildBasket() {
     container.appendChild(contents);
 
     let count = document.createElement('span');
-    count.textContent = "You have " + (storage.length) + " items in your cart";
+    if (storage.length == 1){
+        count.textContent = "You have " + (storage.length) + " item in your cart";
+    }
+    else {
+        count.textContent = "You have " + (storage.length) + " items in your cart";
+    }
     contents.appendChild(count);
 
     if (storage.length  > 0) {
