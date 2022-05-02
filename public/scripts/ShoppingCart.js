@@ -150,7 +150,7 @@ function start(){
 
 }
 
-function addMoney(data) {
+function addMoney() {
     sessionStorage.setItem('wallet', parseInt(sessionStorage.getItem('wallet')) + 100);
     document.getElementById('wallet').innerHTML = sessionStorage.getItem('wallet');
 }
