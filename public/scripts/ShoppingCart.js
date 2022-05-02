@@ -159,7 +159,7 @@ function addMoney(data) {
 function loseMoney(){
 
     if(getTotal() <= 0){
-        alert("order something dumb dumb");
+        alert("The shopping basket is empty.");
         document.getElementById("passage").setAttribute("href","#");
 
     }
