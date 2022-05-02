@@ -164,7 +164,7 @@ function loseMoney(){
 
     }
 
-    else if (sessionStorage.getItem('wallet') - getTotal() < 0){
+    else if (sessionStorage.getItem('wallet') - getTotal() < 0 || sessionStorage.getItem('wallet') == null){
         alert("You are poor, add money in profile");
         document.getElementById("passage").setAttribute("href","#");
 
