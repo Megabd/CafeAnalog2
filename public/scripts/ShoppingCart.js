@@ -139,3 +139,33 @@ function getTotal(){
     }
     return sum;
 }
+
+
+function start(){
+    if (sessionStorage.getItem('wallet') == null){
+        sessionStorage.setItem('wallet', 0);
+
+    }
+    document.getElementById('wallet').innerHTML = sessionStorage.getItem('wallet');
+
+}
+
+function addMoney(data) {
+    sessionStorage.setItem('wallet', parseInt(sessionStorage.getItem('wallet')) + 100);
+    document.getElementById('wallet').innerHTML = sessionStorage.getItem('wallet');
+}
+
+
+function loseMoney(){
+
+
+    if (sessionStorage.getItem('wallet') - getTotal() < 0){
+        alert("You are poor, add money in profile");
+        document.getElementById("passage").setAttribute("href","#");
+
+    }
+    else {
+        sessionStorage.setItem('wallet',sessionStorage.getItem('wallet')-getTotal());
+        document.getElementById("passage").setAttribute("href","Receipt.html");
+    }
+        }
