@@ -158,8 +158,13 @@ function addMoney(data) {
 
 function loseMoney(){
 
+    if(getTotal() <= 0){
+        alert("order something dumb dumb");
+        document.getElementById("passage").setAttribute("href","#");
 
-    if (sessionStorage.getItem('wallet') - getTotal() < 0){
+    }
+
+    else if (sessionStorage.getItem('wallet') - getTotal() < 0){
         alert("You are poor, add money in profile");
         document.getElementById("passage").setAttribute("href","#");
 

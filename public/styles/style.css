@@ -622,6 +622,22 @@ div.image::before {
 
 }
 
+@media(min-width:768px) and (max-width:900px) {
+    /*tablet kinda*/
+    .boxBehindOtherBoxesProfile{
+        width: 98%;
+    }
+    .boxBehindOtherBoxes{
+        width: 90%;
+    }
+    .boxes {
+        width : 42.5%;
+        margin: 3.75%;
+
+    }
+
+}
+
 
 
 .payment-info {
