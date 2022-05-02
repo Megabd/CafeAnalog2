@@ -159,13 +159,13 @@ function addMoney() {
 function loseMoney(){
 
     if(getTotal() <= 0){
-        alert("order something dumb dumb");
+        alert("The shopping basket is empty.");
         document.getElementById("passage").setAttribute("href","#");
 
     }
 
     else if (sessionStorage.getItem('wallet') - getTotal() < 0 || sessionStorage.getItem('wallet') == null){
-        alert("You are poor, add money in profile");
+        alert("Order not approved. Make sure that you are logged in and have a sufficient amount of coffee beans. Coffee beans can be added to your account in your account page. ");
         document.getElementById("passage").setAttribute("href","#");
 
     }
